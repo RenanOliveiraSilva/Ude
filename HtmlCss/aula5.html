@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+</head>
+
+<style>
+
+    table {
+        border-collapse: collapse;
+        width: 1500px;
+    }
+
+    table th, table td {
+        border: 2px solid #52024e;
+        padding: 5px;
+        font-family: sans-serif;
+        text-align: left;
+    }
+
+    table caption {
+        caption-side: bottom;
+        font-style: italic;
+        font-size: 14px;
+        text-align: right;
+        margin: 5px 0;
+    }
+
+    tfoot tr, thead th {
+        background-color: #daa5d7;
+    }
+
+    .responsive-table {
+        max-width: 100%;
+        overflow-x: auto;
+    }
+</style>
+
+<body>
+    <div class="responsive-table">
+        <table>
+            <caption>Uma tabela de Exemplo</caption>
+            <thead>
+                <tr>
+                    <th>
+                        Titulo 1
+                    </th>
+                    <th>
+                        Titulo 2
+                    </th>
+                    <th>
+                        Titulo 3
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Corpo 1</td>
+                    <td>Corpo 2</td>
+                    <td>Corpo 3</td>
+                </tr>
+                <tr>
+                    <td>Corpo 1</td>
+                    <td colspan="2">Ocupando 2 colunas</td>
+                </tr>
+                <tr>
+                    <td>Corpo 1</td>
+                    <td>Corpo 2</td>
+                    <td>Corpo 3</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2" rowspan="2"></td>
+                    <td>Total</td>
+                </tr>
+                <tr>
+
+                    <td>R$ 555 </td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis deleniti itaque doloremque voluptatum aliquam! Delectus maiores qui corporis in impedit aliquid, expedita fugiat inventore nulla numquam ullam nihil tenetur laboriosam!
+        </p>
+    </div>
+</body>
+</html>
