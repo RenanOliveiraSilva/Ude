@@ -4,15 +4,10 @@ let i = 0;
 let rounds = 0;
 let points = 0;
 const arrayAd = ['rock', 'paper', 'scissors'];
-
-
-    let opAd = arrayAd[getRandomNumber()];
-    let opMy = prompt("Chose one: rock, paper, scissors");
-
-    console.log(opAd);
     
     do {
-        let continuePlay = 1;
+        let opAd = arrayAd[getRandomNumber()];
+        let opMy = prompt("Chose one: rock, paper, scissors");
 
         if (opMy == "rock") {
 
@@ -21,11 +16,11 @@ const arrayAd = ['rock', 'paper', 'scissors'];
                 rounds++;
 
             } else if (opAd == "paper") {
-                console.log("Lose: : Your oponent chose paper!");
+                console.log("Lose: Your oponent chose paper!");
                 rounds++;
                 
             } else {
-                console.log("Victory: : Your oponent chose scissors!");
+                console.log("Victory: Your oponent chose scissors!");
                 points++;
                 rounds++;
 
@@ -38,12 +33,12 @@ const arrayAd = ['rock', 'paper', 'scissors'];
                 rounds++;
 
             } else if (opAd == "paper") {
-                console.log("Victory: : Your oponent chose paper!");
+                console.log("Victory: Your oponent chose paper!");
                 rounds++;
                 points++;
                 
             } else {
-                console.log("Draw: : Your oponent chose scissors!");
+                console.log("Draw: Your oponent chose scissors!");
                 rounds++;
 
             }
@@ -55,18 +50,18 @@ const arrayAd = ['rock', 'paper', 'scissors'];
                 points++;
 
             } else if (opAd == "paper") {
-                console.log("Draw: : Your oponent chose paper!");
+                console.log("Draw: Your oponent chose paper!");
                 rounds++;
                 
             } else {
-                console.log("Lose: : Your oponent chose scissors!");
+                console.log("Lose: Your oponent chose scissors!");
                 rounds++;
 
             }
         }
 
         let option = prompt("Whould like continue? (y) / (n)");
-        continuePlay = option = "y" ? continuePlay = 1 : continuePlay = 0;
+        i = option == "y" ? continuePlay = 1 : continuePlay = 0;
         console.log(i);
 
     } while (i != 0);
