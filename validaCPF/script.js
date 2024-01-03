@@ -86,6 +86,6 @@ function validaCpf(cpfEx) {
 }
 
 let cpfValido = '705.484.450-52'
-let cpfInvalido = '123.456.789-10';
+let cpfInvalido = '123.111.789-10';
 
 validaCpf(cpfInvalido);
