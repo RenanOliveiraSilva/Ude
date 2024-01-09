@@ -1,0 +1,24 @@
+npm init -y  ---> Iniciar o pacote npm
+
+npm install express@4.x --> Instalar algum pacote, no caso o express na sua versão 4.qualquer
+
+npm install express --> Instalar a ultima versão
+
+npm install express@4.x -E --> Instalando algum pacote e não abrindo a possibilidade de atualizar com o uptdade
+
+npm update --> Atualizar as versões dos seus pacotes
+
+npm unistall express --> Desinstalar um pacote
+
+npm outdated --> Analisar as versões dos seus pacotes
+
+
+Versão  X.          X.             X
+        major       minor         path
+
+^X.X.X -> Sua versão pode ser atualizada no minor e path, não perdendo compatibilidades na teoria
+
+~X.X.X -> Somente seu path será atualizado
+
+--save-prod e --save-dev  --> Salvar nas dependências ou nas dependências dev
+
