@@ -1,19 +1,18 @@
 const express = require('express');
 const app = express();
 
-//CRUD -> CREATE    READ     UPDATE     DELETE
-//        POST      GET      PUT        DELETE
-
-// http://meusite.com/ <- GET -> Entre a página
-
-//            Requisição  Resposta 
 app.get('/', (request, response ) => {
-    response.send('Hello Word');
+    response.send(`
+        <form acrion="/" method="POST">
+            Nome do Cliente: <input type="text" name="nome">
+            <button>Enviar</button>
+        </form>
+    `);
 
 });
 
-app.get('/contato', (request, response ) => {
-    response.send('Obrigado por entrar em contato');
+app.post('/', (request, response ) => {
+    response.send('Formulário Enviado');
 
 });
 
